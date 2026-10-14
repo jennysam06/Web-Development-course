@@ -1,0 +1,167 @@
+/* Global Reset & Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7fc; /* Very soft pastel off-white/purple tint */
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Styling (Baby Purple Theme) */
+.site-header {
+    background-color: #9b7ede; /* Soft baby purple */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.site-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #fce8f3; /* Light pastel tint for subtitle */
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffb7b2; /* Soft baby pink on hover */
+}
+
+/* Main Container Layout */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Section Styling */
+.content-section {
+    background: #ffffff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(155, 126, 222, 0.08); /* Soft purple-tinted shadow */
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #9b7ede; /* Baby purple for section titles */
+}
+
+/* About Paragraph */
+#about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555555;
+}
+
+/* Projects Grid Layout */
+.projects-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #fdfbfd; /* Subtle pale lavender background */
+    border: 1px solid #ebdcf5; /* Soft purple border */
+    border-radius: 6px;
+    padding: 25px;
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 183, 178, 0.25); /* Soft baby pink glow on hover */
+}
+
+.project-card h3 {
+    color: #9b7ede; /* Baby purple project headers */
+    margin-bottom: 5px;
+}
+
+.project-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9aa2; /* Baby pink tag highlight */
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ebdcf5;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #faf7fc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #9b7ede; /* Highlights purple when clicking inputs */
+}
+
+.contact-form button {
+    background-color: #9b7ede; /* Baby purple submit button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff9aa2; /* Changes to baby pink when hovered */
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #9b7ede; /* Baby purple footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
