@@ -1,0 +1,245 @@
+/* ========================================================
+   CSS Stylesheet for Todo App (style.css)
+   Clean, modern, and aligned with Lab 4 demo
+   ======================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f1f3f9;
+  color: #333333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Card Container */
+.todo-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 620px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 28px 32px;
+}
+
+/* Header Title */
+.todo-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  color: #1e293b;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.todo-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.todo-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Buttons */
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 9px 18px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #475569;
+  border-color: #e2e8f0;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+.btn-secondary:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+/* Filters & Tips Row */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tip-text {
+  font-size: 12.5px;
+  color: #64748b;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  padding: 4px 10px;
+  font-size: 13px;
+  color: #64748b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  color: #2563eb;
+}
+
+.filter-btn.active {
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background-color 0.15s;
+}
+
+.todo-item:hover {
+  background-color: #f8fafc;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+/* Custom Checkbox */
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #2563eb;
+  border-radius: 4px;
+}
+
+/* Todo Text */
+.todo-text {
+  font-size: 15px;
+  color: #1e293b;
+  cursor: pointer;
+  user-select: none;
+  word-break: break-word;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+/* Inline Edit Input */
+.edit-input {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Delete Icon Button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+  background-color: #fee2e2;
+}
+
+/* Footer Section */
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 13px;
+  color: #64748b;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.items-left {
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
